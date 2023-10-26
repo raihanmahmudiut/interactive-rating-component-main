@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: ([https://your-solution-url.com](https://interactive-rating-component-main-rose-ten.vercel.app/))
 
 ## My process
 
@@ -113,8 +112,8 @@ document.getElementById("submit").addEventListener("click", () => {
 
 ### Useful resources
 
-- [Josh Comeau CSS Reset](https://www.joshwcomeau.com) - This helped me for reseting the css base early on to make the field clear to work on. I really liked this pattern and will use it going forward.
-- [W3school](https://www.w3school.com) - This is an amazing article which helped me finally understand Javascript DOM elements. I'd recommend it to anyone still learning this concept.
+- [Josh Comeau CSS Reset](https://www.joshwcomeau.com) - This helped me reset the CSS base early on to make the field clear to work on. I really liked this pattern and will use it going forward.
+- [W3school](https://www.w3school.com) - This is a fantastic article which helped me finally understand Javascript DOM elements. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
