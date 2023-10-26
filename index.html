@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" type="text/css" href="app.css" />
+
+		<title>Frontend Mentor | Interactive rating component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	</head>
+	<body>
+		<!-- Rating state start -->
+		<div class="component-body" id="component-body">
+			<div class="rating-component" id="rating-component">
+				<div class="rating-star" id="rating-star">
+					<img src="./images/icon-star.svg" />
+				</div>
+				<h2 class="rating-text" id="rating-text">How did we do?</h2>
+				<h3 class="rating-description" id="rating-description">
+					Please let us know how we did with your support request. All feedback
+					is appreciated to help us improve our offering!
+				</h3>
+
+				<div class="ratings" id="ratings">
+					<div class="rating-number">1</div>
+					<div class="rating-number">2</div>
+					<div class="rating-number">3</div>
+					<div class="rating-number">4</div>
+					<div class="rating-number">5</div>
+				</div>
+
+				<div id="submit" class="submit-btn" type="button">SUBMIT</div>
+			</div>
+			<!-- Rating state end -->
+
+			<!-- Thank you state start -->
+			<div class="thank-component hidden" id="thank-component">
+				<img src="./images/illustration-thank-you.svg" class="thankyou" />
+				<h2 class="rating" id="rating"></h2>
+				<h1 class="thank-text" id="thank-text">Thank you!</h1>
+				<p class="thank-description" id="thank-description">
+					We appreciate you taking the time to give a rating. If you ever need
+					more support, don’t hesitate to get in touch!
+				</p>
+			</div>
+			<!-- Thank you state end -->
+		</div>
+		<footer id="footer" class="footer">
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by RAIHAN MAHMUD
+			</div>
+		</footer>
+		<script src="app.js"></script>
+	</body>
+</html>

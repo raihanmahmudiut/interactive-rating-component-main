@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+	margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: hsl(216, 12%, 8%);
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+	font-family: "Overpass", sans-serif;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+	isolation: isolate;
+}
+
+.component-body {
+	display: flex;
+	flex-direction: column;
+	background: radial-gradient(
+		circle at top center,
+		hsl(213, 19%, 18%) 20%,
+		/* Initial color, 20% of the gradient height */ hsl(213, 19%, 14%) 40%,
+		/* Transition to a slightly darker color */ hsl(213, 19%, 13%) 50%,
+		/* Transition to an even darker color */ hsl(213, 19%, 12%) 80%,
+		/* Transition to the darkest color */ hsl(213, 19%, 11%) 100%
+			/* Stays the same color at the bottom */
+	);
+
+	width: 25%;
+	height: 50%;
+	padding: 1.5rem;
+	border-radius: 5%;
+}
+
+@media screen and (max-width: 425px) {
+	.component-body {
+		width: 88%;
+		height: 55%;
+		padding-inline: 1rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 426px) and (max-width: 776px) {
+	.component-body {
+		width: 50%;
+		height: 55%;
+		padding: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 777px) and (max-width: 1024px) {
+	.component-body {
+		width: 40%;
+		height: 55%;
+		padding: 1.5rem;
+	}
+}
+
+.rating-component {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.rating-star {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
+	background-color: hsl(213, 19%, 18%);
+	border-radius: 100%;
+}
+
+.rating-text {
+	color: hsl(0, 0%, 100%);
+	margin-top: 10px;
+}
+.rating-description {
+	color: hsl(217, 12%, 63%);
+	font-weight: 400;
+	font-size: 15px;
+}
+.ratings {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.rating-number {
+	background-color: hsl(213, 19%, 18%);
+	color: hsl(216, 12%, 54%);
+	transition: background-color 0.3s;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	font-family: "Overpass", sans-serif;
+	cursor: pointer;
+}
+
+.rating-number:hover {
+	background-color: hsl(25, 97%, 53%);
+	color: white;
+}
+.rating-number.selected {
+	background-color: hsl(216, 12%, 54%);
+	color: hsl(0, 0%, 100%); /* Text color for the selected state */
+}
+.submit-btn {
+	width: 100%;
+	background-color: hsl(25, 97%, 53%);
+	transition: background-color 0.3s;
+	color: hsl(0, 0%, 100%);
+	font-weight: 400;
+	font-size: 13px;
+	font-family: "Overpass", sans-serif;
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submit-btn:hover {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(25, 97%, 53%);
+}
+
+.popup-message {
+	color: hsl(216, 12%, 54%);
+}
+
+.thank-component {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rating {
+	background-color: hsl(213, 19%, 18%);
+	font-size: 14px;
+	padding-inline: 20px;
+	padding-block: 5px;
+	font-weight: 400;
+	color: hsl(25, 97%, 53%);
+	border-radius: 200px;
+}
+
+.thank-text {
+	color: white;
+	font-size: 24px;
+}
+
+.thank-description {
+	color: hsl(217, 12%, 63%);
+	text-align: center;
+	font-size: 15px;
+}
+
+.hidden {
+	display: none;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: hsl(217, 12%, 63%);
+}
