@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: ([https://your-solution-url.com](https://interactive-rating-component-main-rose-ten.vercel.app/))
-
+- Live Site URL: ([(https://interactive-rating-component-main-rose-ten.vercel.app/)])
 ## My process
 
 ### Built with
