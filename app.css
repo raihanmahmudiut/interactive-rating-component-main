@@ -176,12 +176,13 @@ h6 {
 	font-weight: 400;
 	font-size: 13px;
 	font-family: "Overpass", sans-serif;
-	padding: 8px;
+	padding: 10px;
 	cursor: pointer;
 	border-radius: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	letter-spacing: 3px;
 }
 
 .submit-btn:hover {
