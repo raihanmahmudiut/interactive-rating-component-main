@@ -91,26 +91,34 @@ h6 {
 
 @media screen and (max-width: 425px) {
 	.component-body {
-		width: 88%;
-		height: 55%;
-		padding-inline: 1rem;
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
+		width: 92%;
+		height: 48%;
+		padding-inline: 1.5rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 }
 
 @media screen and (min-width: 426px) and (max-width: 776px) {
 	.component-body {
 		width: 50%;
-		height: 55%;
+		height: 40%;
 		padding: 1.5rem;
 	}
 }
 
-@media screen and (min-width: 777px) and (max-width: 1024px) {
+@media screen and (min-width: 777px) and (max-width: 1023px) {
 	.component-body {
 		width: 40%;
-		height: 55%;
+		height: 30%;
+		padding: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+	.component-body {
+		width: 30%;
+		height: 60%;
 		padding: 1.5rem;
 	}
 }
@@ -133,12 +141,13 @@ h6 {
 
 .rating-text {
 	color: hsl(0, 0%, 100%);
-	margin-top: 10px;
+
+	font-weight: 400;
 }
 .rating-description {
 	color: hsl(217, 12%, 63%);
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 1rem;
 }
 .ratings {
 	display: flex;
@@ -149,8 +158,8 @@ h6 {
 	background-color: hsl(213, 19%, 18%);
 	color: hsl(216, 12%, 54%);
 	transition: background-color 0.3s;
-	height: 3rem;
-	width: 3rem;
+	height: 2.7rem;
+	width: 2.7rem;
 	border-radius: 100%;
 	display: flex;
 	justify-content: center;
@@ -173,7 +182,7 @@ h6 {
 	background-color: hsl(25, 97%, 53%);
 	transition: background-color 0.3s;
 	color: hsl(0, 0%, 100%);
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 13px;
 	font-family: "Overpass", sans-serif;
 	padding: 10px;
