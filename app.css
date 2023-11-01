@@ -91,11 +91,11 @@ h6 {
 
 @media screen and (max-width: 425px) {
 	.component-body {
-		width: 92%;
-		height: 48%;
-		padding-inline: 1.5rem;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+		width: 90%;
+		height: 45%;
+		padding-inline: 1rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
 	}
 }
 
@@ -183,15 +183,15 @@ h6 {
 	transition: background-color 0.3s;
 	color: hsl(0, 0%, 100%);
 	font-weight: 700;
-	font-size: 13px;
+	font-size: 16px;
 	font-family: "Overpass", sans-serif;
-	padding: 10px;
+	padding: 13px;
 	cursor: pointer;
 	border-radius: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
 .submit-btn:hover {
